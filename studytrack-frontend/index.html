@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudyTrack</h1>
+    <p>Tanulásrendszerező alkalmazás</p>
+  </header>
+
+  <main>
+    <form id="mainForm">
+
+      <input type="text" id="name" placeholder="Tárgy neve" required>
+
+      <select id="requirement" required>
+        <option value="">Elvárás kiválasztása</option>
+        <option value="zh">ZH</option>
+        <option value="szobeli">Szóbeli</option>
+        <option value="beadando">Beadandó</option>
+        <option value="beadando+zh">Beadandó + ZH</option>
+        <option value="beadando+szobeli">Beadandó + Szóbeli</option>
+        <option value="szobeli+zh">Szóbeli + ZH</option>
+      </select>
+
+      <input type="text" id="title" placeholder="Leírás" required>
+
+      <input type="date" id="deadline" required>
+
+      <select id="status" required>
+        <option value="">Státusz kiválasztása</option>
+        <option value="hatralevo">Hátralévő</option>
+        <option value="folyamatban">Folyamatban</option>
+        <option value="befejezett">Befejezett</option>
+      </select>
+
+      <button type="submit">Hozzáadás</button>
+
+    </form>
+
+
+        <div id="subjectContainer">
+
+        <div class="subject-card hatralevo">
+            <h2>Alkalmazások Projektlabor</h2>
+            <p><strong>Elvárás:</strong> beadandó</p>
+            <p><strong>Leírás:</strong> Webapp beadandó csapatban</p>
+            <p><strong>Határidő:</strong> 2026-05-01</p>
+            <p><strong>Státusz:</strong> hatralevo</p>
+
+            <div class="card-actions">
+            <button class="edit-btn">Szerkesztés</button>
+            <button class="delete-btn">Törlés</button>
+            </div>
+        </div>
+
+        </div>
+
+</div>
+
+
+  </main>
+ <script src="app.js"></script>
+</body>
+</html>

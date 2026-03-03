@@ -1,0 +1,120 @@
+/* Alap beállítások */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f6f9;
+}
+
+/* Fejléc */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #555;
+}
+
+/* Fő tartalom középre */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Űrlap */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #34495e;
+}
+
+/* Kártyák */
+.subject-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.subject-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Státusz színezés */
+.status-hatralevo {
+  color: red;
+  font-weight: bold;
+}
+
+.status-folyamatban {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-befejezett {
+  color: green;
+  font-weight: bold;
+}
+.subject-card.hatralevo {
+  background-color: #fff9d6;   /* halvány sárga */
+}
+
+.subject-card.folyamatban {
+  background-color: #e6f0ff;   /* halvány kék */
+}
+
+.subject-card.befejezett {
+  background-color: #e6f7ec;   /* halvány zöld */
+}
+.card-actions {
+  margin-top: 15px;
+}
+
+.card-actions button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
