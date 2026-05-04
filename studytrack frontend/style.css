@@ -1,0 +1,189 @@
+/* Alap beállítások */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Fejléc */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+header h1 {
+  margin-bottom: 5px;
+  color: #1e5a39
+}
+
+header p {
+  color: #1f6f43;
+}
+
+/* Fő tartalom középre */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.main-header {
+  background: rgba(21, 129, 129, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+/* Űrlap */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px #1f6f43;
+  margin-bottom: 30px;
+}
+
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  background: linear-gradient(90deg, #20613d, #2d8f57);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+form button:hover {
+  background-color: #224230;
+}
+
+/* Kártyák */
+.subject-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px #1f6f43;
+  transition: all 0.2s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px #1f6f43;
+}
+
+.subject-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Státusz színezés */
+.status-hatralevo {
+  color: red;
+  font-weight: bold;
+}
+
+.status-folyamatban {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-befejezett {
+  color: green;
+  font-weight: bold;
+}
+.subject-card.hatralevo {
+  background-color: #fff9d6; 
+}
+
+.subject-card.folyamatban {
+  background-color: #e6f0ff;   
+}
+
+.subject-card.befejezett {
+  background-color: #e6f7ec;   
+  }
+  
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end; /* JOBBRA */
+  gap: 12px;
+}
+
+.card-actions button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  background: #bceed4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.8s ease;
+}
+
+/* Szerkesztés */
+.edit-btn {
+  color: #2d8f57;
+  border-color: #bfe5d2;
+}
+
+.edit-btn:hover {
+  background: #e6f7ec;
+}
+
+/* Törlés */
+.delete-btn {
+  color: #d9534f;
+  border-color: #f5c6cb;
+}
+
+.delete-btn:hover {
+  background: #fdeaea;
+}
+
+.message-box {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: none;
+}
+
+.subject-card p:last-of-type {
+  font-weight: bold;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.subject-card.hátralévő p:last-of-type {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.subject-card.folyamatban p:last-of-type {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.subject-card.befejezett p:last-of-type {
+  background-color: #d4edda;
+  color: #155724;
+}

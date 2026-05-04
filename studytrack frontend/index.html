@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudyTrack</h1>
+    <p>Tanulásrendszerező alkalmazás</p>
+  </header>
+
+  <main>
+    <form id="mainForm">
+
+      <input type="text" id="name" placeholder="Tárgy neve" required>
+
+      <select id="requirement" required>
+        <option value="">Elvárás kiválasztása</option>
+        <option value="Beadandó feladat">Beadandó feladat</option>
+        <option value="Zárthelyi dolgozat">Zárthelyi dolgozat</option>
+        <option value="Szóbeli vizsga">Szóbeli vizsga</option>
+      </select>
+
+      <input type="text" id="title" placeholder="Leírás" required>
+
+      <input type="date" id="deadline" required>
+
+      <select id="status" required>
+        <option value="">Státusz kiválasztása</option>
+        <option value="hátralévő">Hátralévő</option>
+        <option value="folyamatban">Folyamatban</option>
+        <option value="befejezett">Befejezett</option>
+      </select>
+
+      <button type="submit">Hozzáadás</button>
+
+    </form>
+    <div id="messageBox" class="message-box"></div>
+
+        <div id="subjectContainer"></div>
+
+</div>
+
+
+  </main>
+ <script src="app.js"></script>
+</body>
+</html>
