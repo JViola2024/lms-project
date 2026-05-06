@@ -14,7 +14,7 @@ A részletes, fejezetekre bontott dokumentáció (követelmények, technológiá
 
 ## Architektúra röviden
 
-- **Frontend:** vanilla HTML, CSS, JavaScript (Fetch API)
+- **Frontend:** HTML, CSS, JavaScript (Fetch API)
 - **Backend:** Node.js, Express 5, Mongoose 9
 - **Adatbázis:** MongoDB (felhőben MongoDB Atlas)
 - **Hosting:** Render (backend), statikus frontend bárhol
